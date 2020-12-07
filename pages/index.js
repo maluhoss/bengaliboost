@@ -1,14 +1,29 @@
 import Nav from '../components/nav'
+import Footer from '../components/footer'
 
 export default function IndexPage() {
   return (
-    <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-gray-700 dark:text-gray-100">
-          Next.js + Tailwind CSS 2.0
-        </h1>
+    <>
+      <div>
+        <Nav />
+        <div className="h-adjust flex py-6 px-16 space-x-4">
+          <img src="/images/girl-listening.svg" className="max-w-full h-full w-3/6" />
+          <div className="flex flex-col justify-center space-y-6 py-60">
+            <h1 className="tracking-wide text-5xl text-grey font-bold">
+              discover the untold stories of Bengalis who are changing the world
+            </h1>
+            <button className="button-cta w-96">listen to the latest episode</button>
+          </div>
+        </div>
+        <Footer />
       </div>
-    </div>
+      <style jsx global>
+        {`
+          body {
+            background: #FFC30F;
+          }
+        `}
+      </style>
+    </>
   )
 }

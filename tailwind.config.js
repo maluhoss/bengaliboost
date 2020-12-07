@@ -17,7 +17,7 @@ module.exports = {
         white: '#FFFFFF'
       },
       height: theme => ({
-        'adjust': 'calc(100vh - 87.62px - 87.62px)',
+        'adjust': 'calc(100vh - 80px - 39px)',
       })
     }
   },
