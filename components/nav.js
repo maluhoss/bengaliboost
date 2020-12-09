@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
 const links = [
-  { href: 'http://localhost:3000/about', label: 'about' },
-  { href: 'http://localhost:3000/episodes', label: 'episodes' },
-  { href: 'http://localhost:3000/contact', label: 'send us a message' }
+  { href: '/about', label: 'about' },
+  { href: '/episodes', label: 'episodes' },
+  { href: '/contact', label: 'send us a message' }
 ]
 
 export default function Nav() {
