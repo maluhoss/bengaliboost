@@ -6,7 +6,7 @@ export default function Episodes() {
   return (
     <>
       <Nav />
-        <div className={`w-full h-screen px-10 py-6 ${backgroundColour}`}>
+        <div className={`w-full h-adjust px-10 py-6 ${backgroundColour}`}>
           <div className="flex flex-wrap space-y-10 sm:space-y-0 sm:flex-nowrap sm:p-10">
             <div className="flex flex-col justify-center space-y-5 mx-auto">
               <h1 className="text-center max-w-sm sm:max-w-md tracking-widest leading-tight text-3xl md:text-4xl lg:text-5xl text-white font-bold">
