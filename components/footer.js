@@ -9,7 +9,7 @@ export default function Footer({ backgroundColour }) {
   const footerTextColour = (backgroundColour !== 'bg-yellow') ? 'text-white' : 'text-grey'
 
   return (
-    <footer className={`${backgroundColour} flex justify-center py-2 space-x-6 max-h-8`}>
+    <footer className={`${backgroundColour} flex justify-center py-2 space-x-6 h-8`}>
         <p className={`font-bold ${footerTextColour} tracking-widest`}>listen on: </p>
         <ul className={`${footerTextColour} flex items-center space-x-8`}>
           {links.map(({ href, label, image }) => (
