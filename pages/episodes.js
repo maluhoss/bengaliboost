@@ -5,20 +5,20 @@ export default function Episodes() {
   const backgroundColour = 'bg-red'
   return (
     <>
-      <div>
-        <Nav />
-        <div className={`h-adjust flex py-6 px-16 space-x-4 ${backgroundColour}`}>
-          <div className="justify-center items-center space-y-10 py-60">
-            <h1 className="tracking-wide text-4xl text-white font-bold">
-              episodes
-            </h1>
-            <p className="text-white font-bold">
-            coming soon!
-            </p>
+      <Nav />
+        <div className={`w-full h-screen px-10 py-6 ${backgroundColour}`}>
+          <div className="flex flex-wrap space-y-10 sm:space-y-0 sm:flex-nowrap sm:p-10">
+            <div className="flex flex-col justify-center space-y-5 mx-auto">
+              <h1 className="text-center max-w-sm sm:max-w-md tracking-widest leading-tight text-3xl md:text-4xl lg:text-5xl text-white font-bold">
+                episodes
+              </h1>
+              <p className="mx-auto text-center sm:text-left max-w-sm sm:max-w-sm tracking-widest leading-tight text-sm sm:text-base md:text-xl text-white font-bold">
+              season 1 coming soon
+              </p>
+            </div>
           </div>
         </div>
-        <Footer backgroundColour={backgroundColour} />
-      </div>
+      <Footer backgroundColour={backgroundColour} />
     </>
   )
 }
