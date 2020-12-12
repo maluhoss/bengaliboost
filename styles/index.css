@@ -11,9 +11,6 @@ body {
 /* Stop purging. */
 
 /* Write your own custom component styles here */
-.button-cta {
-  @apply tracking-widest font-semibold text-xl text-white bg-red py-4 px-6 rounded-full;
-}
 
 /* Start purging... */
 @tailwind utilities;

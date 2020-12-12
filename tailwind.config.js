@@ -3,7 +3,10 @@ module.exports = {
   darkMode: 'media', // 'media' or 'class'
   theme: {
     minHeight: {
-      'adjust': 'calc(100vh - 64px - 32px)'
+      'adjust': 'calc(100vh - 64px - 40px)'
+    },
+    minWidth: {
+      'image': '40%'
     },
     fontFamily: {
       body: ['Montserrat', 'sans-serif'],
@@ -20,7 +23,7 @@ module.exports = {
         white: '#FFFFFF'
       },
       height: theme => ({
-        'adjust': 'calc(100vh - 64px - 32px)',
+        'adjust': 'calc(100vh - 64px - 40px)',
       })
     }
   },
