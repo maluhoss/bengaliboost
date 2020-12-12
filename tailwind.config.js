@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media', // 'media' or 'class'
   theme: {
+    minHeight: {
+      'adjust': 'calc(100vh - 64px - 32px)'
+    },
     fontFamily: {
       body: ['Montserrat', 'sans-serif'],
       display: ['Montserrat', 'sans-serif']
