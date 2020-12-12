@@ -6,7 +6,8 @@ module.exports = {
       'adjust': 'calc(100vh - 64px - 40px)'
     },
     minWidth: {
-      'image': '40%'
+      'image-lg': '40%',
+      'image-sm': '25%'
     },
     fontFamily: {
       body: ['Montserrat', 'sans-serif'],
