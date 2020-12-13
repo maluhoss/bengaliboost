@@ -43,7 +43,7 @@ export default function Nav() {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 {links.map((link) => (
-                  <a href={link.href} className="text-grey hover:bg-grey hover:bg-opacity-20 hover:text-grey px-3 py-2 rounded-md text-sm md:text-base lg:text-xl font-bold tracking-widest">{link.label}</a>
+                  <a href={link.href} className="text-grey hover:bg-grey hover:bg-opacity-20 hover:text-grey px-3 py-2 my-3 rounded-md text-sm md:text-base lg:text-xl font-bold tracking-widest">{link.label}</a>
                 ))}
               </div>
             </div>
