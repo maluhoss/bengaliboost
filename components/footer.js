@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const links = [
   {
     href: '#',
@@ -36,7 +34,7 @@ export default function Footer({ backgroundColour }) {
       <p className={`text-base sm:text-lg font-bold ${footerTextColour} tracking-widest my-auto`}>listen on: </p>
       <div className={`${footerTextColour} flex items-center space-x-4 sm:space-x-8 my-auto`}>
         {links.map(({ href, label, image }) => (
-            <div className="flex">
+            <div key={label} className="flex">
               <img src={image[logo]} className="w-6 h-6 mr-2" />
               <a href={href} className={`${footerTextColour} text-base sm:text-lg no-underline font-bold my-auto`}>
                 {label}

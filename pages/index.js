@@ -1,5 +1,6 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Link from 'next/link'
 
 
 export default function IndexPage() {
@@ -14,7 +15,11 @@ export default function IndexPage() {
             <h1 className="mx-auto text-center lg:text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg tracking-widest leading-tight text-xl sm:text-2xl md:text-4xl lg:text-5xl text-grey font-bold">
               discover the untold stories of Bengalis who are changing the world
             </h1>
-            <button className="tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-full p-2">listen to the latest episode</button>
+            <Link href="/episodes">
+              <button className="tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-full p-2">
+                listen to the latest episode
+              </button>
+            </Link>
           </div>
         </div>
       </div>

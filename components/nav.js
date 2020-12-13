@@ -42,8 +42,12 @@ export default function Nav() {
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                {links.map((link) => (
-                  <a href={link.href} className="text-grey hover:bg-grey hover:bg-opacity-20 hover:text-grey px-3 py-2 my-3 rounded-md text-sm md:text-base lg:text-xl font-bold tracking-widest">{link.label}</a>
+                {links.map(({ href, label }) => (
+                  <Link key={label} href={href}>
+                    <a className="text-grey hover:bg-grey hover:bg-opacity-20 hover:text-grey px-3 py-2 my-3 rounded-md text-sm md:text-base lg:text-xl font-bold tracking-widest">
+                      {label}
+                    </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -53,8 +57,12 @@ export default function Nav() {
 
       <div className={`${(!showMe) ? 'hidden' : 'block' } sm:${(!showMe) ? 'hidden' : 'block' }`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-grey">
-          {links.map((link) => (
-            <a href={link.href} className="text-white hover:bg-black hover:bg-opacity-50 block px-3 py-2 rounded-md text-base font-semibold tracking-widest">{link.label}</a>
+          {links.map(({ href, label }) => (
+            <Link key={label} href={href}>
+              <a className="text-white hover:bg-black hover:bg-opacity-50 block px-3 py-2 rounded-md text-base font-semibold tracking-widest">
+                {label}
+              </a>
+            </Link>
           ))}
         </div>
       </div>
