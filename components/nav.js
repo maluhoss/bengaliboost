@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const links = [
   { href: '/about', label: 'about' },
   { href: '/episodes', label: 'episodes' },
-  { href: '/contact', label: 'send us a message' }
+  { href: '/contact', label: 'contact' }
 ]
 
 export default function Nav() {
@@ -36,7 +36,7 @@ export default function Nav() {
               <img className="hidden lg:block h-16 w-auto" src="/images/logo.svg" alt="Workflow" />
               <Link href="/">
                 <a className="text-2xl lg:text-4xl text-grey no-underline font-bold tracking-widest">
-                  <img className="h-12 w-auto" src="/images/logo-text.svg" alt="Workflow" />
+                  <img className="h-10 w-auto" src="/images/logo-text.svg" alt="Workflow" />
                 </a>
               </Link>
             </div>
