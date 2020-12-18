@@ -2,18 +2,18 @@ module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'media', // 'media' or 'class'
   theme: {
-    minHeight: {
-      'adjust': 'calc(100vh - 64px - 40px)'
-    },
-    minWidth: {
-      'image-lg': '40%',
-      'image-sm': '25%'
-    },
     fontFamily: {
       body: ['Montserrat', 'sans-serif'],
       display: ['Montserrat', 'sans-serif']
     },
     extend: {
+      minHeight: {
+        'adjust': 'calc(100vh - 64px - 40px)'
+      },
+      minWidth: {
+        'image-lg': '40%',
+        'image-sm': '25%'
+      },
       colors: {
         indigo: '#581845',
         rubyRed: '#900C3F',
