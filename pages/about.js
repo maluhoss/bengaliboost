@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Nav />
-        <div className={`w-full h-adjust px-3.5 sm:px-10 ${backgroundColour}`}>
+        <div className={`w-full h-adjust px-2.5 sm:px-10 ${backgroundColour}`}>
           <div className="flex justify-center content-center min-h-adjust flex-wrap sm:flex-nowrap md:p-10">
             <div className="mx-auto flex flex-col justify-center content-center space-y-4 sm:space-y-5 px-4 py-8 lg:px-4 lg:py-0">
               <h1 className="text-center sm:text-left max-w-md tracking-widest leading-tight text-3xl md:text-4xl lg:text-5xl text-yellow font-bold">
