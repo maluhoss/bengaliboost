@@ -13,7 +13,7 @@ export default function About() {
                 about
               </h1>
               <p className="mx-auto text-center sm:text-left max-w-md tracking-widest leading-tight text-sm md:text-base lg:text-xl text-white font-bold">
-                Bengali Boost is all about boosting 🚀 the people, stories, parts of our culture that inspire us.
+                Bengali Boost is all about boosting 🚀 the people, stories and parts of our culture that inspire us.
               </p>
               <p className="mx-auto text-center sm:text-left max-w-md tracking-widest leading-tight text-xs md:text-xs lg:text-sm text-white font-bold">
               Bengali Boost was born in the weird times of 2020. After we stopped impulse-buying masks, sanitizer and toilet paper in bulk, we realized what we actually needed most was community. We were also grappling with big issues like health, racism, civic duty and trying to figure out how our culture fits into it all. Despite the tough times we were inspired by the artists, innovators, storytellers and brave Bengalis making waves in the world. Bengali Boost is about them, about connecting us all together and about figuring out what a future Bengali-diaspora culture could look like.
