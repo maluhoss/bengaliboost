@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
       <Nav />
-        <div className={`w-full h-adjust px-10 ${backgroundColour}`}>
+        <div className={`w-full h-adjust overflow-auto px-10 ${backgroundColour}`}>
           <div className="flex flex-wrap min-h-adjust space-y-10 sm:space-y-0 sm:flex-nowrap sm:p-10">
             <div className="flex flex-col justify-center mx-auto space-y-10">
               <div className=" space-y-7 lg:space-y-10">
