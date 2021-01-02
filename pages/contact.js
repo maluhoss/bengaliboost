@@ -1,10 +1,14 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Head from 'next/head'
 
 export default function Contact() {
   const backgroundColour = 'bg-yellow'
   return (
     <>
+      <Head>
+        <title>Contact | Bengali Boost</title>
+      </Head>
       <Nav />
         <div className={`w-full h-adjust overflow-auto px-10 ${backgroundColour}`}>
           <div className="flex flex-wrap min-h-adjust space-y-10 sm:space-y-0 sm:flex-nowrap sm:p-10">

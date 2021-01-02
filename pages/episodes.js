@@ -1,10 +1,14 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Head from 'next/head'
 
 export default function Episodes() {
   const backgroundColour = 'bg-red'
   return (
     <>
+      <Head>
+        <title>Episodes | Bengali Boost</title>
+      </Head>
       <Nav />
         <div className={`w-full h-adjust overflow-auto px-10 ${backgroundColour}`}>
           <div className="flex justify-center content-center min-h-adjust my-auto">
