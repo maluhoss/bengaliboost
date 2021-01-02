@@ -1,12 +1,16 @@
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 export default function IndexPage() {
   const backgroundColour = 'bg-yellow'
   return (
     <>
+      <Head>
+        <title>Bengali Boost</title>
+      </Head>
       <Nav />
       <div className={`w-full h-adjust overflow-auto px-10 ${backgroundColour}`}>
         <div className="flex mx-auto justify-center content-center min-h-adjust flex-wrap space-y-4 sm:space-y-10 lg:space-y-0 sm:flex-nowrap sm:py-10">
