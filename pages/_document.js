@@ -21,7 +21,7 @@ class MyDocument extends Document {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-${process.env.NEXT_PUBLIC_TRACKING_ID}');`
+              gtag('config', 'G-73VWK7ZKKP');`
             }}
           />
         </Head>
