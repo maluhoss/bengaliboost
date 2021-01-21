@@ -11,19 +11,9 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="shortcut icon" href="/images/favicon.png" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=${YOUR_TRACKING_ID}"></script>
-          <script
-            async
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-${process.env.NEXT_PUBLIC_TRACKING_ID}');`
-            }}
-          />
         </Head>
         <body>
           <Main />
