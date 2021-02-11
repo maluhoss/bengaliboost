@@ -12,7 +12,8 @@ module.exports = {
       },
       minWidth: {
         'image-lg': '40%',
-        'image-sm': '25%'
+        'image-sm': '25%',
+        'episode': '20rem'
       },
       colors: {
         indigo: '#581845',
