@@ -3,6 +3,7 @@ import Nav from '../../components/nav'
 import Footer from '../../components/footer'
 import Link from 'next/link'
 import Head from 'next/head'
+import moment from 'moment'
 const contentful = require('contentful')
 
 const client = contentful.createClient({
@@ -26,7 +27,7 @@ export default function IndividualEpisode({ details }) {
             {details['fields']['episodeTitle']}
             </h1>
             <p className="text-center md:text-left max-w-md text-base lg:text-xl tracking-widest leading-tight text-white font-bold">
-            {details['fields']['publishedDate']}
+            {moment(details['fields']['publishedDate']).format('MMMM Do, YYYY')}
             </p>
             <p className="text-center md:text-left max-w-md tracking-widest leading-tight text-xs md:text-xs lg:text-sm text-white font-semibold">
             {details['fields']['episodeDescription']}
@@ -69,7 +70,7 @@ export default function IndividualEpisode({ details }) {
             If you can't see the list icon, click <a className="hover:text-orange text-yellow" target="_blank" href={details['fields']['embedPlayerUrlBackup']}>here</a>
             </p>
           </div>
-          <iframe className="bg-white md:ml-4 m-auto min-w-image-lg md:min-w-image-lg w-96 md:w-2/6 mb-5" src={details['fields']['embedPlayerUrl']} scrolling="no" width="100%" height="200" frameBorder="0"></iframe>
+          <iframe className="rounded-2xl bg-white md:ml-4 m-auto min-w-image-lg md:min-w-image-lg w-96 md:w-2/6 mb-5" src={details['fields']['embedPlayerUrl']} scrolling="no" width="100%" height="200" frameBorder="0"></iframe>
         </div>
       </div>
       <Footer backgroundColour={backgroundColour} />

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "contentful": "^8.1.7",
+    "moment": "^2.29.1",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

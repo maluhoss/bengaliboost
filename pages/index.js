@@ -20,7 +20,7 @@ export default function IndexPage() {
               a hub for bengali artists
             </h1>
             <Link href="/episodes">
-              <button className="tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-full p-2">
+              <button className="tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-2xl p-2">
                 listen to the latest episode
               </button>
             </Link>
