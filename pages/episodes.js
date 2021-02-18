@@ -58,7 +58,7 @@ export default function Episodes({ episodes }) {
 
 
 export async function getStaticProps(context) {
-  const episodes = await client.getEntries()
+  const episodes = await client.getEntries({'content_type': 'episodeBlock'})
 
   return {
     props: { 'episodes': episodes['items']}

@@ -92,7 +92,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const episodes = await client.getEntries()
+  const episodes = await client.getEntries({'content_type': 'episodeBlock'})
+
   const [details] = episodes.items.filter((episode) => (
     episode.fields.urlSlug === params.slug
   ))
