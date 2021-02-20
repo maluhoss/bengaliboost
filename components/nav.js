@@ -32,8 +32,8 @@ export default function Nav() {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex-shrink-0 flex items-center">
-              <img className="block lg:hidden h-12 w-auto" src="/images/logo.svg" alt="Workflow" />
-              <img className="hidden lg:block h-12 w-auto" src="/images/logo.svg" alt="Workflow" />
+              <img className="block lg:hidden h-8 w-auto" src="/images/logo-pic.png" alt="Workflow" />
+              <img className="hidden lg:block h-8 w-auto" src="/images/logo-pic.png" alt="Workflow" />
               <Link href="/">
                 <a className="text-2xl lg:text-4xl text-grey no-underline font-bold tracking-widest">
                   <img className="h-8 w-auto" src="/images/logo-text.svg" alt="Workflow" />
