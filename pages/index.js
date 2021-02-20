@@ -17,7 +17,7 @@ export default function IndexPage() {
           <img src="/images/people-carousel.gif" className="m-auto w-2/5 h-2/5 min-w-image-sm sm:h-1/6 sm:w-1/6" />
           <div className="flex flex-col justify-center space-y-5 sm:space-y-10 mx-auto">
             <h1 className="mx-auto text-center lg:text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg tracking-widest leading-tight text-xl sm:text-2xl md:text-4xl lg:text-5xl text-grey font-bold">
-              discover the untold stories of Bengalis who are changing the world
+              a hub for bengali artists
             </h1>
             <Link href="/episodes">
               <button className="tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-full p-2">

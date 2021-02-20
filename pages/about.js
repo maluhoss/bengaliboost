@@ -17,10 +17,10 @@ export default function About() {
                 about
               </h1>
               <p className="mx-auto text-center sm:text-left max-w-md tracking-widest leading-tight text-base lg:text-xl text-white font-bold">
-                Bengali Boost is all about boosting 🚀 the people, stories and parts of our culture that inspire us.
+              Bengali Boost is a hub for Bengali artists.
               </p>
-              <p className="mx-auto text-center sm:text-left max-w-md tracking-widest leading-tight text-xs md:text-xs lg:text-sm text-white font-semibold">
-              Bengali Boost was born in the weird times of 2020. After we stopped impulse-buying masks, sanitizer and toilet paper in bulk, we realized what we actually needed most was <span className="text-yellow font-bold">community.</span> <br/><br/> We were also grappling with big issues like health, racism, civic duty and trying to figure out how our <span className="text-yellow font-bold">culture</span> fits into it all. Despite the tough times we were inspired by the artists, innovators, storytellers and brave Bengalis making waves in the world. <br/><br/> Bengali Boost is about being recharged by their <span className="text-yellow font-bold">stories</span>, uplifting each other and figuring out what a future Bengali-diaspora culture could look like.
+              <p className="mx-auto text-center sm:text-left max-w-md tracking-widest leading-tight text-sm md:text-sm lg:text-base text-white font-semibold">
+              We want to see more Bengalis make great stuff so we want to 1) make it easier for artists to learn from each other and 2) feel like there's a community  where they can share, make mistakes, get feedback, collab, learn, find support and just have fun. <br/><br/> Whether you're a creative pro or are just getting started there's something here for you.
               </p>
             </div>
             <img src="/images/crowd.svg" className="sm:ml-4 m-auto min-w-image-sm sm:min-w-image-lg w-32 h-32 sm:h-2/6 sm:w-2/6" />
