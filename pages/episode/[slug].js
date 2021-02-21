@@ -1,7 +1,5 @@
-import { useRouter } from 'next/router'
 import Nav from '../../components/nav'
 import Footer from '../../components/footer'
-import Link from 'next/link'
 import Head from 'next/head'
 import moment from 'moment'
 const contentful = require('contentful')
@@ -56,7 +54,7 @@ export default function IndividualEpisode({ details }) {
               : ''
             }
           </div>
-          <img src={`https:${details['fields']['titleWithImage']['fields']['file']['url']}`} className="md:ml-4 m-auto min-w-image-sm md:min-w-image-lg w-64 h-64 md:h-2/6 md:w-2/6" />
+          <img src={`https:${details['fields']['guestPicture']['fields']['file']['url']}`} className="rounded-2xl md:ml-4 m-auto min-w-image-sm md:min-w-image-lg w-64 h-64 md:h-2/6 md:w-2/6" />
         </div>
         <div className="flex justify-center content-center flex-wrap md:flex-nowrap py-5 md:p-10">
           <div className="w-full sm:w-9/12 lg:w-6/12 xl:w-5/12 mx-auto flex flex-col justify-center content-center space-y-4 md:space-y-5 py-8 px-4 lg:py-0">

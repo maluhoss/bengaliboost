@@ -35,12 +35,7 @@ export default function Episodes({ episodes }) {
                     <div key={entry['fields']['urlSlug']} className="px-2 py-4 space-y-3 w-full md:w-1/2 lg:w-1/3 inline-block">
                       <Link href={`/episode/${entry['fields']['urlSlug']}`}>
                         <a className="block">
-                          <img src={`https:${entry['fields']['titleWithImage']['fields']['file']['url']}`} className="rounded-t-2xl bg-grey max-w-xs w-60 h-60 m-auto" />
-                        </a>
-                      </Link>
-                      <Link href={`/episode/${entry['fields']['urlSlug']}`}>
-                        <a className="block">
-                          <button className="rounded-b-2xl block w-60 text-black font-semibold text-center m-auto bg-yellow p-2 no-underline">{entry['fields']['episodeTitle']}</button>
+                          <img src={`https:${entry['fields']['titleWithImage']['fields']['file']['url']}`} className="rounded-2xl bg-grey max-w-xs w-60 h-60 m-auto" />
                         </a>
                       </Link>
                       <p className="w-60 text-white font-semibold text-center m-auto">{moment(entry['fields']['publishedDate']).format('MMMM Do, YYYY')}</p>
