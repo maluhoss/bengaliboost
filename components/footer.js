@@ -1,14 +1,15 @@
 const links = [
+  // when other podcast platforms approve
+  // {
+  //   href: '#',
+  //   label: 'Apple',
+  //   image: {
+  //     dark: '/images/apple-logo.svg',
+  //     light: '/images/apple-logo-white.svg'
+  //   },
+  // },
   {
-    href: '#',
-    label: 'Apple',
-    image: {
-      dark: '/images/apple-logo.svg',
-      light: '/images/apple-logo-white.svg'
-    },
-  },
-  {
-    href: '#',
+    href: 'https://open.spotify.com/show/4ja6SVgUoUOPeCG3grIHzB',
     label: 'Spotify',
     image: {
       dark: '/images/spotify-logo.svg',
