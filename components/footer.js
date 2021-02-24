@@ -1,13 +1,21 @@
 const links = [
   // when other podcast platforms approve
-  // {
-  //   href: '#',
-  //   label: 'Apple',
-  //   image: {
-  //     dark: '/images/apple-logo.svg',
-  //     light: '/images/apple-logo-white.svg'
-  //   },
-  // },
+  {
+    href: 'https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNjI4OTk1LnJzcw==',
+    label: 'Google',
+    image: {
+      dark: '/images/googlepod-logo.svg',
+      light: '/images/googlepod-logo-white.svg'
+    },
+  },
+  {
+    href: 'https://podcasts.apple.com/ca/podcast/bengali-boost/id1554784486',
+    label: 'Apple',
+    image: {
+      dark: '/images/applepod-logo.svg',
+      light: '/images/applepod-logo-white.svg'
+    },
+  },
   {
     href: 'https://open.spotify.com/show/4ja6SVgUoUOPeCG3grIHzB',
     label: 'Spotify',
@@ -36,9 +44,9 @@ export default function Footer({ backgroundColour }) {
       <div className={`${footerTextColour} flex items-center space-x-4 sm:space-x-8 my-auto`}>
         {links.map(({ href, label, image }) => (
             <div key={label} className="flex">
-              <img src={image[logo]} className="w-6 h-6 mr-2" />
-              <a href={href} className={`${footerTextColour} text-base sm:text-lg no-underline font-bold my-auto`}>
-                {label}
+              <a target="_blank" href={href} className={`${footerTextColour} flex text-base sm:text-lg no-underline font-bold my-auto`}>
+                <img src={image[logo]} className="w-6 h-6 mr-2" />
+                <p>{label}</p>
               </a>
             </div>
         ))}
