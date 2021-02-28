@@ -21,7 +21,6 @@ export default function IndividualEpisode({ details }) {
       <Nav />
       <div className={`w-full h-adjust overflow-auto px-10 ${backgroundColour}`}>
         <div className="flex flex-col justify-center content-center min-h-adjust flex-wrap md:flex-nowrap md:p-10">
-          {/* <div className="mx-auto flex flex-col justify-center content-center space-y-4 md:space-y-5 py-8 px-4 lg:py-0"> */}
           <div className="p-7 sm:p-10 flex flex-col justify-center mx-auto space-y-7 sm:space-y-10 max-w-md sm:max-w-4xl">
             <div className="space-y-3">
               <h1 className="text-center tracking-widest leading-tight text-4xl sm:text-5xl text-yellow font-bold">
@@ -59,15 +58,15 @@ export default function IndividualEpisode({ details }) {
               </div>
               : ''
             }
-              <p className="text-center text-2xl sm:text-3xl tracking-widest leading-tight text-yellow font-bold">
-                Guest Info
+            <p className="text-center text-2xl sm:text-3xl tracking-widest leading-tight text-yellow font-bold">
+              Guest Info
+            </p>
+            <div className="sm:flex space-y-5 sm:space-y-0">
+              <img src={`https:${details['fields']['guestPicture']['fields']['file']['url']}`} className="m-auto rounded-2xl w-full sm:w-5/12 sm:h-full mr-0 sm:mr-4" />
+              <p className="tracking-widest leading-tight text-lg text-white rounded-2xl font-semibold text-center sm:text-left">
+              {details['fields']['guestDescription']}
               </p>
-              <div className="sm:flex space-y-5 sm:space-y-0">
-                <img src={`https:${details['fields']['guestPicture']['fields']['file']['url']}`} className="rounded-2xl mr-0 sm:mr-4 m-auto w-full sm:h-5/12 sm:w-5/12" />
-                <p className="tracking-widest leading-tight text-lg text-white rounded-2xl font-semibold text-center sm:text-left">
-                {details['fields']['guestDescription']}
-                </p>
-              </div>
+            </div>
           </div>
         </div>
       </div>
