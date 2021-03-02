@@ -12,7 +12,32 @@ const client = contentful.createClient({
 
 export default function IndividualEpisode({ details }) {
   const backgroundColour = 'bg-grey'
-
+  const linksMapping = {
+    'facebook': '/images/facebook.svg',
+    'instagram': '/images/instagram.svg',
+    'youtube': '/images/youtube.svg',
+    'spotify': '/images/spotify.svg',
+  }
+  const links = Object.keys(linksMapping)
+  // const fakeData = {
+  //   'facebook': 'https://www.facebook.com',
+  //   'instagram': 'https://www.instagram.com',
+  //   'youtube': 'https://www.youtube.com',
+  //   'spotify': 'https://www.spotify.com'
+  // }
+  // const fakeOtherLinks = [
+  //     {
+  //         "label": "Test"
+  //     },
+  //     {
+  //         "link": "https://www.facebook.com",
+  //         "label": "Test"
+  //     },
+  //     {
+  //         "link": "https://google.com",
+  //         "label": "Test 2"
+  //     }
+  // ]
   return (
     <>
       <Head>
@@ -61,11 +86,42 @@ export default function IndividualEpisode({ details }) {
             <p className="text-center text-2xl sm:text-3xl tracking-widest leading-tight text-yellow font-bold">
               Guest Info
             </p>
-            <div className="sm:flex space-y-5 sm:space-y-0">
-              <img src={`https:${details['fields']['guestPicture']['fields']['file']['url']}`} className="m-auto rounded-2xl w-full sm:w-5/12 sm:h-full mr-0 sm:mr-4" />
-              <p className="tracking-widest leading-tight text-lg text-white rounded-2xl font-semibold text-center sm:text-left">
-              {details['fields']['guestDescription']}
-              </p>
+            <div className="md:flex space-y-5 md:space-y-0">
+              <img src={`https:${details['fields']['guestPicture']['fields']['file']['url']}`} className="m-auto rounded-2xl w-full md:w-6/12 md:h-full lg:w-5/12 mr-0 sm:mr-4" />
+              <div>
+                <p className="tracking-widest leading-tight text-base text-white rounded-2xl font-semibold text-center md:text-left">
+                {details['fields']['guestDescription']}
+                </p>
+                <div className="flex pt-4 justify-center md:justify-start">
+                  {links.map(link => {
+                    if (details['fields'][link]) {
+                      return (
+                        <a target="_blank" href={details['fields'][link]}>
+                          <img src={linksMapping[link]} className="w-6 h-6 mr-3" />
+                        </a>
+                      )
+                    }
+                  })}
+                </div>
+                {details['fields']['otherLinks'] ?
+                  <>
+                    <br />
+                    <p className="tracking-widest leading-tight text-lg text-yellow rounded-2xl font-semibold text-center md:text-left mb-2">Special Mentions</p>
+                    <ul>
+                      {details['fields']['otherLinks'].map(mention => {
+                        if (mention['link']) {
+                          return (
+                            <p className="hover:text-yellow tracking-widest leading-tight text-sm text-white rounded-2xl font-semibold text-center md:text-left">
+                              <a target="_blank" href={mention['link']}>- {mention['label']}</a>
+                            </p>
+                          )
+                        }
+                        return <p className="tracking-widest leading-tight text-sm text-white rounded-2xl font-semibold text-center sm:text-left">- {mention['label']}</p>
+                      })}
+                    </ul> 
+                  </> : ''
+                }
+              </div>
             </div>
           </div>
         </div>
