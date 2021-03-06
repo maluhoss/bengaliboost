@@ -69,15 +69,19 @@ export default function IndividualEpisode({ details }) {
             {(details['fields']['glossaryPost'] || details['fields']['recapPost']) ?
               <div className="space-y-4">
                 {details['fields']['glossaryPost'] ?
-                  <button className="block w-full tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-2xl py-2 px-4">
-                    Word Guide
-                  </button>
+                  <a target="_blank" href={details['fields']['glossaryPost']}>
+                    <button className="block w-full tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-2xl py-2 px-4">
+                      Wordcast
+                    </button>
+                  </a>
                   : ''
                 }
                 {details['fields']['recapPost'] ?
-                  <button className="block w-full tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-2xl py-2 px-4">
-                    Recap
-                  </button>
+                  <a target="_blank" href={details['fields']['recapPost']}>
+                    <button className="block w-full tracking-widest font-semibold text-base md:text-2xl text-white bg-red rounded-2xl py-2 px-4">
+                      Recap
+                    </button>
+                  </a>
                   : ''
                 }
               </div>
